@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.saratkumar.cgpacalculator.MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="      CGPA calculator"
+        android:textColor="@android:color/black"
+        android:textSize="36sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/sem1t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="semester 1:"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+
+            />
+
+        <EditText
+            android:id="@+id/sem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/sem1t"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cre1t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/cre8"
+            android:paddingRight="24dp"
+            android:paddingTop="8dp"
+            android:text="Credits:"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/cre1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:inputType="number"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sem2t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem1t"
+            android:paddingTop="8dp"
+            android:text="semester 2:"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+
+            />
+
+        <EditText
+            android:id="@+id/sem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem1t"
+            android:layout_toRightOf="@id/sem2t"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cre2t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem1t"
+            android:paddingRight="24dp"
+            android:layout_toLeftOf="@+id/cre8"
+            android:paddingTop="8dp"
+            android:text="Credits:"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/cre2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem1t"
+            android:layout_alignParentRight="true"
+            android:inputType="number"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sem3t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem2t"
+            android:paddingTop="8dp"
+            android:text="semester 3:"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+
+            />
+
+        <EditText
+            android:id="@+id/sem3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem2t"
+            android:layout_toRightOf="@id/sem2t"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cre3t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem2t"
+            android:layout_toLeftOf="@+id/cre8"
+            android:paddingRight="24dp"
+            android:paddingTop="8dp"
+            android:text="Credits:"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/cre3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem2t"
+            android:layout_alignParentRight="true"
+            android:inputType="number"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sem4t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem3t"
+            android:paddingTop="8dp"
+            android:text="semester 4:"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+
+            />
+
+        <EditText
+            android:id="@+id/sem4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem3t"
+            android:layout_toRightOf="@id/sem3t"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cre4t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem3t"
+            android:paddingRight="24dp"
+            android:layout_toLeftOf="@+id/cre8"
+            android:paddingTop="8dp"
+            android:text="Credits:"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/cre4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem3t"
+            android:layout_alignParentRight="true"
+            android:inputType="number"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sem5t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem4t"
+            android:paddingTop="8dp"
+            android:text="semester 5:"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+
+            />
+
+        <EditText
+            android:id="@+id/sem5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem4t"
+            android:layout_toRightOf="@id/sem3t"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cre5t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem4t"
+            android:layout_toLeftOf="@+id/cre8"
+            android:paddingTop="8dp"
+            android:text="Credits:"
+            android:paddingRight="24dp"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/cre5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem4t"
+            android:layout_alignParentRight="true"
+            android:inputType="number"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sem6t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem5t"
+            android:paddingTop="8dp"
+            android:text="semester 6:"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+
+            />
+
+        <EditText
+            android:id="@+id/sem6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem5t"
+            android:layout_toRightOf="@id/sem3t"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cre6t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem5t"
+            android:layout_toLeftOf="@+id/cre8"
+            android:paddingTop="8dp"
+            android:text="Credits:"
+            android:paddingRight="24dp"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/cre6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem5t"
+            android:layout_alignParentRight="true"
+            android:inputType="number"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sem7t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem6t"
+            android:paddingTop="8dp"
+            android:text="semester 7:"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+
+            />
+
+        <EditText
+            android:id="@+id/sem7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem6t"
+            android:layout_toRightOf="@id/sem3t"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cre7t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem6t"
+            android:layout_toLeftOf="@+id/cre8"
+            android:paddingRight="24dp"
+            android:paddingTop="8dp"
+            android:text="Credits:"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/cre7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem6t"
+            android:layout_alignParentRight="true"
+            android:inputType="number"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/sem8t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem7t"
+            android:paddingTop="8dp"
+            android:text="semester 8:"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+
+            />
+
+        <EditText
+            android:id="@+id/sem8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem7t"
+            android:layout_toRightOf="@id/sem3t"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/cre8t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem7t"
+            android:layout_toLeftOf="@+id/cre8"
+            android:paddingLeft="64dp"
+            android:paddingTop="8dp"
+            android:text="Credits:"
+            android:textAllCaps="true"
+            android:paddingRight="24dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/cre8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sem7t"
+            android:layout_alignParentRight="true"
+            android:inputType="number"
+            android:text="0"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="calculate"
+        android:paddingBottom="24dp"
+        android:paddingTop="24dp"
+        android:text="Calculate"
+        android:textAllCaps="true"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:text="Total GPA:"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/CGPA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/t1"
+            android:text="0"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>
